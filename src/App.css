@@ -14,9 +14,12 @@
 }
 
 .backround-image{
-    background-image: url("https://cutewallpaper.org/25/starry-background-wallpaper/star-background-wallpaper-posted-by-michelle-thompson.png");
+    background-image: url("https://cdn.wallpapersafari.com/15/89/FkiTP4.jpeg");
+    min-height: 100vh;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 #rg, #lg {
@@ -29,4 +32,34 @@
     height: 130px;
     opacity: 70%;
     border-radius: 50%;
+}
+
+#rgst{
+    font-size: 200px;
+    margin-left: 37%;
+    color:beige;
+}
+
+.rgt-frm {
+  width: 50%;
+  font-size: 55px;
+  color: beige;
+  margin-left: 25%;
+  text-align: center;
+}
+
+#br{
+    background-color: beige;
+    font-size: 50px;
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 400px;
+    height: 120px;
+    opacity: 70%;
+    margin-bottom: 2%;
+}
+
+#frm {
+  font-size: 30px;
+  text-align: center;
 }
