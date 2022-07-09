@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import axios from 'axios';
+import Swal from 'sweetalert2';
 
 function RegisterPage() {
 
@@ -28,10 +30,17 @@ function RegisterPage() {
 
     function submitForm(e) {
         e.preventDefault();
-
+        axios.get('/sanctum/csrf-cookie').then(response => {
+            axios.post(`api/register`, korisnik).then(res => {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Info',
+                    text: res.data.Info
+                })
+            });
+        });
 
     }
-
 
 
     return (
@@ -44,19 +53,19 @@ function RegisterPage() {
 
                     <div className="form-group">
                         <label>Name: </label>
-                        <input type={'text'} className="form-control mt-2 mb-2" id='frm' value={korisnik.name} onChange={handleName} />
+                        <input type={'text'} className="form-control mb-2" id='frm' value={korisnik.name} onChange={handleName} />
                     </div>
                     <div className="form-group">
                         <label>Username: </label>
-                        <input type={'text'} className="form-control mt-2 mb-2" id='frm' value={korisnik.username} onChange={handleUsername} />
+                        <input type={'text'} className="form-control mb-2" id='frm' value={korisnik.username} onChange={handleUsername} />
                     </div>
                     <div className="form-group">
                         <label>Password: </label>
-                        <input type={'password'} className="form-control mt-2 mb-2" id='frm' value={korisnik.password} onChange={handlePassword} />
+                        <input type={'password'} className="form-control mb-2" id='frm' value={korisnik.password} onChange={handlePassword} />
                     </div>
                     <div className="form-group">
                         <label>Email: </label>
-                        <input type={'email'} className="form-control mt-2 mb-2" id='frm' value={korisnik.email} onChange={handleEmail} />
+                        <input type={'email'} className="form-control mb-2" id='frm' value={korisnik.email} onChange={handleEmail} />
                     </div>
 
                     <button type="submit" className="btn btn-light" id="br">Register</button>
