@@ -20,6 +20,7 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    height: 130em;
 }
 
 #rg, #lgnbtn {
@@ -122,4 +123,31 @@
     margin-top: 50px;
     font-size: 45px;
     color: beige;
+}
+
+h3, h1 {
+    color: beige;
+}
+
+.svisatovi-div{
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    grid-column-gap: 350px;
+    grid-row-gap: 300px;
+    justify-content: center;
+    color: beige;
+}
+
+.sat-div{
+    border: 1px solid white;
+}
+
+#cena {
+    margin-left: 30px;
+}
+
+#model {
+    margin-left: 15px;
 }
