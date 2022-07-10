@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
 function LoginPage() {
 
@@ -9,6 +10,7 @@ function LoginPage() {
         password: '',
     });
 
+    const navigate = useNavigate();
 
     function handleUsername(e) {
         setKorisnik({ ...korisnik, username: e.target.value })
@@ -41,6 +43,7 @@ function LoginPage() {
                     localStorage.setItem('user', res.data.User.username);
                     localStorage.setItem('token', res.data.Token);
                     localStorage.setItem('type', res.data.User.type);
+                    navigate('/watches');
                 }
 
             });
@@ -56,11 +59,11 @@ function LoginPage() {
 
                 <form onSubmit={submitForm} className="lgt-frm">
 
-                    <div className="form-group">
+                    <div className="form-group mb-3">
                         <label>Username: </label>
                         <input type={'text'} className="form-control mb-2" id='frm' value={korisnik.username} onChange={handleUsername} />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group mb-3">
                         <label>Password: </label>
                         <input type={'password'} className="form-control mb-2" id='frm' value={korisnik.password} onChange={handlePassword} />
                     </div>

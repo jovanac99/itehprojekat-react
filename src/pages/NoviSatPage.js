@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import axios from 'axios';
+import Swal from 'sweetalert2';
 
 function NoviSatPage() {
 
@@ -51,6 +53,36 @@ function NoviSatPage() {
     function submitForm(e) {
         e.preventDefault();
 
+        const noviSat = new FormData();
+
+        noviSat.append('brend', sat.brend);
+        noviSat.append('model', sat.model);
+        noviSat.append('slika', slika.slika);
+        noviSat.append('cena', sat.cena);
+        noviSat.append('pol', sat.pol);
+        noviSat.append('narukvica', sat.narukvica);
+        noviSat.append('mehanizam', sat.mehanizam);
+        noviSat.append('garancija', sat.garancija);
+
+
+        axios.post(`api/novi-sat`, noviSat).then(res => {
+
+            if (res.data.Info == 'Please fill in all the fields!') {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Info',
+                    text: res.data.Info
+                })
+            }
+            else {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Info',
+                    text: res.data.Info
+                })
+            }
+
+        });
     }
 
 
