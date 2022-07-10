@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import axios from 'axios';
+import Swal from 'sweetalert2';
 
 function LoginPage() {
 
@@ -20,6 +22,29 @@ function LoginPage() {
     function submitForm(e) {
         e.preventDefault();
 
+        axios.get('/sanctum/csrf-cookie').then(response => {
+            axios.post(`api/login`, korisnik).then(res => {
+
+                if (res.data.Info == 'Pokušajte ponovo!' || res.data.Info == 'Unesite username i password!') {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Info',
+                        text: res.data.Info
+                    })
+                }
+                else {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Info',
+                        text: res.data.Info
+                    })
+                    localStorage.setItem('user', res.data.User.username);
+                    localStorage.setItem('token', res.data.Token);
+                    localStorage.setItem('type', res.data.User.type);
+                }
+
+            });
+        });
     }
 
 

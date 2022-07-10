@@ -9,7 +9,7 @@ function HomePage() {
                 <h1 id="wlcm">Welcome to our shop</h1>
 
                 <Link to={"/registracija"}><button class="btn btn-lg btn-light" id="rg">Register</button></Link>
-                <button class="btn btn-lg btn-light" id="lg">Login</button>
+                <Link to={"/login"}><button class="btn btn-lg btn-light" id="lgnbtn">Login</button></Link>
 
 
             </div>

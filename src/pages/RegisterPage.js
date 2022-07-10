@@ -52,7 +52,7 @@ function RegisterPage() {
                 <form onSubmit={submitForm} className="rgt-frm">
 
                     <div className="form-group">
-                        <label>Name: </label>
+                        <label className="mt-4">Name: </label>
                         <input type={'text'} className="form-control mb-2" id='frm' value={korisnik.name} onChange={handleName} />
                     </div>
                     <div className="form-group">
