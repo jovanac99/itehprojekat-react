@@ -45,7 +45,7 @@ function RegisterPage() {
 
     return (
         <div className="rp-div">
-            <div className="backround-image">
+            <div className="background-image">
 
                 <h1 id="rgst">Register</h1>
 

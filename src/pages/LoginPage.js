@@ -50,7 +50,7 @@ function LoginPage() {
 
     return (
         <div className="lp-div">
-            <div className="backround-image">
+            <div className="background-image">
 
                 <h1 id="lgn">Login</h1>
 

@@ -7,13 +7,13 @@
 }
 
 #wlcm {
-    font-size: 150px;
-    margin-left: 22%;
-    padding-top: 2%;
+    font-size: 120px;
+    margin-left: 19%;
+    padding-top: 4%;
     color:beige;
 }
 
-.backround-image{
+.background-image{
     background-image: url("https://cdn.wallpapersafari.com/15/89/FkiTP4.jpeg");
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -42,10 +42,10 @@
 }
 
 .rgt-frm, .lgt-frm {
-  width: 50%;
+  width: 40%;
   font-size: 45px;
   color: beige;
-  margin-left: 25%;
+  margin-left: 30%;
   text-align: center;
 }
 
@@ -65,7 +65,7 @@
   text-align: center;
 }
 
-#lgn{
+#lgn {
     font-size: 100px;
     margin-left: 44%;
     padding-top: 5%;
@@ -82,4 +82,44 @@
     width: 400px;
     height: 120px;
     opacity: 70%;
+}
+
+#wtch {
+    font-size: 100px;
+    margin-left: 34%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    color:beige;
+}
+
+#addbn{
+    background-color: beige;
+    font-size: 25px;
+    margin-left: 43%;
+    margin-top: -2%;
+    width: 300px;
+    height: 50px;
+    opacity: 70%;
+}
+
+#ns{
+   font-size: 100px;
+    margin-left: 39%;
+    padding-top: 3%;
+    color:beige;
+}
+
+#ns-in{
+  font-size: 25px;
+}
+
+.novi-frm{
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    grid-template-rows: 200px 200px 200px;
+    grid-column-gap: 100px;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 45px;
+    color: beige;
 }
