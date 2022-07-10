@@ -14,18 +14,23 @@ function WatchesPage() {
     }, []);
 
 
+    const dugme = <div>
+        <Link to={"/novi-sat"}><button type="button" className="btn btn-light" id="addbn">ADD</button></Link>
+    </div>
+
+
     return (
         <div className="wp-div">
             <div className="background-image">
                 <h1 id="wtch">Galaxy Watches</h1>
 
-                <Link to={"/novi-sat"}><button type="button" className="btn btn-light" id="addbn">ADD</button></Link>
+                {localStorage.getItem('type') === 'admin' ? dugme : ""}
 
                 <div className="svisatovi-div">
                     {sviSatovi.map((sat) => {
                         return (
-                            <div className="sat-div">
-                                <Sat sat={sat} key={sat.id} />
+                            <div className="sat-div" key={sat.id}>
+                                <Sat sat={sat} />
                             </div>
                         )
                     })}
