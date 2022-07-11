@@ -20,7 +20,7 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 130em;
+    height: 150em;
 }
 
 #rg, #lgnbtn {
@@ -32,7 +32,6 @@
     width: 500px;
     height: 130px;
     opacity: 70%;
-    border-radius: 50%;
 }
 
 #rgst{
@@ -135,7 +134,7 @@ h3, h1 {
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px 300px;
     grid-column-gap: 350px;
-    grid-row-gap: 300px;
+    grid-row-gap: 280px;
     justify-content: center;
     color: beige;
 }
@@ -187,7 +186,52 @@ h3, h1 {
 }
 
 #btnlgt{
-    width: 200px;
-    margin-left: 80%;
+    width: 220px;
+    font-size: 24px;
+    margin-left: 72%;
     background-color: beige;
 }
+
+#fnd{
+    font-size: 100px;
+    margin-left: 29%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    color:beige;
+}
+
+#fnd-in{
+    font-size: 28px;
+    width: 30%;
+    margin-left: 35%;
+}
+
+#fndbtn{
+    background-color: beige;
+    font-size: 25px;
+    margin-top: 1%;
+    margin-left: 42%;
+    width: 300px;
+    height: 70px;
+    opacity: 70%;
+}
+
+#prikaz {
+    width: 30%;
+    margin-top: 50%;
+}
+
+.fp-div{
+    height: 150vh;
+}
+
+.mod-div{
+    font-size: 30px;
+    margin-top: 1%;
+     border: 1px solid white;
+     width: 30%;
+     margin-bottom: 1%;
+     margin-left: 35%;
+     color: beige;
+}
+

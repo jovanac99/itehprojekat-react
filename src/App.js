@@ -7,6 +7,7 @@ import LoginPage from './pages/LoginPage';
 import WatchesPage from './pages/WatchesPage';
 import NoviSatPage from './pages/NoviSatPage';
 import EditSatPage from './pages/EditSatPage';
+import FindPage from './pages/FindPage';
 
 axios.defaults.baseURL = "http://localhost:8000/"
 axios.defaults.headers.post['Content-Type'] = 'application/json';
@@ -30,7 +31,7 @@ function App() {
           <Route path="/watches" element={<WatchesPage />} />
           <Route path="/novi-sat" element={<NoviSatPage />} />
           <Route path="/edit-sat/:satid" element={<EditSatPage />} />
-
+          <Route path="/find" element={<FindPage />} />
         </Routes>
       </Router>
     </div>

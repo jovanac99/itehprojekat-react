@@ -74,8 +74,6 @@ function EditSatPage() {
         setIzmenaSat({ ...izmenaSat, garancija: e.target.value })
     }
 
-    console.log(izmenaSat)
-    console.log(slika)
 
     function submitForm(e) {
         e.preventDefault();

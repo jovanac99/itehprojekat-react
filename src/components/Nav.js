@@ -28,6 +28,7 @@ function Nav() {
         <div className="nav-div">
             <nav>
                 <Link to="/watches">Home</Link>
+                <Link to="/find">Find</Link>
                 <button className="btn btn-light btn-lg" onClick={logout} id="btnlgt">Log out</button>
             </nav>
         </div >
