@@ -1,7 +1,6 @@
 import Nav from "../components/Nav";
 import { useState } from 'react';
 import axios from 'axios';
-import Swal from 'sweetalert2';
 
 
 function FindPage() {

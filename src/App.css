@@ -129,12 +129,12 @@ h3, h1 {
 }
 
 .svisatovi-div{
-    margin-top: 1%;
+    margin-top: 3%;
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px 300px;
     grid-column-gap: 350px;
-    grid-row-gap: 280px;
+    grid-row-gap: 240px;
     justify-content: center;
     color: beige;
 }
@@ -235,3 +235,55 @@ h3, h1 {
      color: beige;
 }
 
+.ps-div{
+     margin-top: 1%;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-column-gap: 350px;
+    justify-content: center;
+    color: beige;
+}
+
+.s-div{
+    display: flex;
+    margin-top: -5%;
+    margin-bottom: 2%;
+}
+
+#s-in{
+    margin-left: -5%;
+    height: 60px;
+    font-size: 20px;
+    width: 400px;
+}
+
+#sg{
+    font-size: 30px;
+    margin-left: 5%;
+    background-color: beige;
+    width: 200px;
+    opacity: 70%;
+    height: 60px;
+}
+
+.p-div{
+    display: flex;
+    width: 730px;
+    margin-top: -5%;
+    margin-left: -105px;
+}
+
+#sort-in {
+    font-size: 25px;
+    height: 60px;
+    width: 260px;
+    margin-right: 20px;
+}
+
+#sortbt {
+    font-size: 30px;
+    background-color: beige;
+    width: 450px;
+    opacity: 70%;
+    height: 60px;
+}
