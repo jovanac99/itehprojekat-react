@@ -8,7 +8,7 @@ function HomePage() {
 
                 <h1 id="wlcm">Welcome to Galaxy Watches</h1>
 
-                <Link to={"/registracija"}><button class="btn btn-lg btn-light" id="rg">Register</button></Link>
+                <Link to={"/registracija"}><button className="btn btn-lg btn-light" id="rg">Register</button></Link>
                 <Link to={"/login"}><button class="btn btn-lg btn-light" id="lgnbtn">Login</button></Link>
 
 

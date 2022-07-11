@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import Nav from '../components/Nav';
 
 function NoviSatPage() {
 
@@ -89,6 +90,9 @@ function NoviSatPage() {
     return (
         <div className="nsp-div">
             <div className="background-image">
+
+                <Nav />
+
                 <h1 id="ns">New watch</h1>
 
 

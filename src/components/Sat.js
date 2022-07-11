@@ -12,7 +12,7 @@ function Sat(props) {
     </div >
 
     const dugmeEdit = <div>
-        <Link to={`/edit-sat/${sat.id}`}><button class="btn btn-lg btn-light" id="edtbtn">EDIT</button></Link>
+        <Link to={`/edit-sat/${sat.id}`}><button className="btn btn-lg btn-light" id="edtbtn">EDIT</button></Link>
     </div >
 
     function deleteSat(ID) {

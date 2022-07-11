@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Sat from '../components/Sat';
+import Nav from '../components/Nav';
 
 function WatchesPage() {
 
@@ -22,6 +23,9 @@ function WatchesPage() {
     return (
         <div className="wp-div">
             <div className="background-image">
+
+                <Nav />
+
                 <h1 id="wtch">Galaxy Watches</h1>
 
                 {localStorage.getItem('type') === 'admin' ? dugme : ""}
